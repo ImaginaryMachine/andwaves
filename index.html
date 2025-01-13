@@ -4,10 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AndWaves</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .column {
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .left {
+            background-color: #555; /* Darker gray */
+            flex: 1;
+            color: white;
+        }
+        .middle {
+            background-color: #f4f4f4;
+            flex: 3;
+            color: #333;
+            position: relative;
+        }
+        .right {
+            background-color: #eaeaea;
+            flex: 1;
+            color: #333;
+        }
+        ul {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .images {
+            margin-top: 20px;
+        }
+        .images img {
+            width: 80%; /* Adjust width as needed */
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: auto;
+        }
+        .footer a {
+            text-decoration: none;
+            color: #007BFF;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        /* Style for links in the left column */
+        .left a {
+            color: white;
+            text-decoration: none;
+        }
+        .left a:hover {
+            text-decoration: underline;
+        }
+        .right a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .right a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to AndWaves.com</h1>
-    <p>Under construction</p>
-
+    <div class="container">
+        <div class="column left">
+            <h1>Focus Areas</h1>
+            <ul>
+                <li><h3>Android Apps</h3></li>
+                <li><h3>Financial analysis</h3></li>
+            </ul>
+        </div>
+        <div class="column middle">
+            <h1>Welcome to AndWaves</h1>
+            <ul>
+                <li><h3>Business utility</h3></li>
+                <li><h3>Photography Apps</h3></li>
+                <li><h3>Creativity Applications</h3></li>
+            </ul>
+            <div class="images">
+                <img src="./images/A-mbta.jpg" alt="entrance to mass transit">
+            </div>
+            <div>
+                <h2>About AndWaves</h2>
+                <p>
+		AndWaves, LLC is a technology startup company founded in 2010. AndWaves is focused upon low cost systems that extract and utilize information from the data of inexpensive sensors.   AndWaves converts data into information.  
+                </p>
+            </div>
+            <div class="footer">
+                <a href="about.html">About Us</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="data-safety.html">Data Safety</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="column right">
+            <h1>Featured Products</h1>
+            <p>These applications are available in the Google Android Marketplace:</p>
+            <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.tomatotimes.keepers" target="_blank"><h3>Keepers</h3></a></li>
+                <p>
+                    Keepers is a password generator using a secret passphrase that you provide. 
+                    Passwords are given simple names such as "a" or "b" so they can be written "in the open" without revealing any information.
+                </p>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
